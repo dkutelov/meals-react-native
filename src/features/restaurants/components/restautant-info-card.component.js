@@ -7,17 +7,19 @@ const RestaurantCard = styled(Card)`
 `;
 
 const RestaurantImage = styled(Card.Cover)`
-  padding: 20px;
-  background-color: #fff;
+  padding: ${(props) => props.theme.space[3]};
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 
 const Title = styled.Text`
-  padding: 16px;
+  font-family: ${(props) => props.theme.fonts.body};
+  padding: ${(props) => props.theme.space[3]};
+  color: ${(props) => props.theme.colors.ui.primary};
 `;
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
-    name = "Some restaurant",
+    name = "Sushiiii restaurant",
     icon,
     photos = [
       "https://edosushi.bg/wp-content/uploads/2015/08/Edo-55-845x684.jpg",
