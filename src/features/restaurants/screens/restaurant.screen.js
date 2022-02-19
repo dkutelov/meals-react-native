@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, SafeAreaView, StatusBar } from "react-native";
+import { SafeAreaView, StatusBar } from "react-native";
 import { Searchbar } from "react-native-paper";
 import styled from "styled-components/native";
 
@@ -7,8 +7,9 @@ import { RestaurantInfoCard } from "../components/restautant-info-card.component
 
 const RestaurantSafeArea = styled(SafeAreaView)`
   flex: 1;
-  margin-top: ${StatusBar.currentHeight};
+  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
+//currentHeight is not available on iOS and returns undefined
 
 const RestaurantList = styled.View`
   flex: 1;

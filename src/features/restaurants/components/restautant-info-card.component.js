@@ -3,7 +3,7 @@ import { Card } from "react-native-paper";
 import styled from "styled-components/native";
 
 const RestaurantCard = styled(Card)`
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 
 const RestaurantImage = styled(Card.Cover)`
