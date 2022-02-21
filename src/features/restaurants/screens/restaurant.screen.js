@@ -1,20 +1,18 @@
 import React from "react";
-import { SafeAreaView, StatusBar, FlatList } from "react-native";
+import { FlatList } from "react-native";
 import { Searchbar } from "react-native-paper";
 import styled from "styled-components/native";
 
 import { RestaurantInfoCard } from "../components/restautant-info-card.component";
+import { SafeArea } from "../../../components/utilities/safe-area.component";
 
-const RestaurantSafeArea = styled(SafeAreaView)`
+const RestaurantList = styled(FlatList).attrs({
+  contentContainerStyle: {
+    padding: 16,
+  },
+})`
   flex: 1;
-  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
-`;
-//currentHeight is not available on iOS and returns undefined
-
-const RestaurantList = styled.View`
-  flex: 1;
-  background-color: ${(props) => props.theme.colors.bg.secondary};
-  padding: ${(props) => props.theme.space[3]};
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 
 const Search = styled.View`
@@ -27,7 +25,7 @@ export const RestaurantsScreen = () => {
   const onChangeSearch = (query) => setSearchQuery(query);
 
   return (
-    <RestaurantSafeArea>
+    <SafeArea>
       <Search>
         <Searchbar
           placeholder="Search"
@@ -36,7 +34,7 @@ export const RestaurantsScreen = () => {
         />
       </Search>
 
-      <FlatList
+      <RestaurantList
         data={[
           { name: 1 },
           { name: 2 },
@@ -48,8 +46,8 @@ export const RestaurantsScreen = () => {
         ]}
         renderItem={() => <RestaurantInfoCard />}
         keyExtractor={(item) => item.name}
-        contentContainerStyle={{ padding: 0 }}
+        showsVerticalScrollIndicator={false}
       />
-    </RestaurantSafeArea>
+    </SafeArea>
   );
 };
