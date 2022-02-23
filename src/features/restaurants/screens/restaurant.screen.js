@@ -6,7 +6,7 @@ import styled from "styled-components/native";
 import { RestaurantInfoCard } from "../components/restautant-info-card.component";
 import { SafeArea } from "../../../components/utilities/safe-area.component";
 import { RestaurantsContext } from "../../../services/restaurants/restaurant.context";
-
+import { LoadingIndicator } from "../../../components/loading/loading.component";
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
     padding: 16,
@@ -28,6 +28,7 @@ export const RestaurantsScreen = () => {
 
   return (
     <SafeArea>
+      {isLoading && <LoadingIndicator />}
       <Search>
         <Searchbar
           placeholder="Search"
