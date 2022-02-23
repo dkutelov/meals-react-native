@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FlatList } from "react-native";
 import { Searchbar } from "react-native-paper";
 import styled from "styled-components/native";
 
 import { RestaurantInfoCard } from "../components/restautant-info-card.component";
 import { SafeArea } from "../../../components/utilities/safe-area.component";
+import { RestaurantsContext } from "../../../services/restaurants/restaurant.context";
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
@@ -21,6 +22,7 @@ const Search = styled.View`
 
 export const RestaurantsScreen = () => {
   const [searchQuery, setSearchQuery] = React.useState("");
+  const restaurantsContext = useContext(RestaurantsContext);
 
   const onChangeSearch = (query) => setSearchQuery(query);
 
@@ -35,15 +37,7 @@ export const RestaurantsScreen = () => {
       </Search>
 
       <RestaurantList
-        data={[
-          { name: 1 },
-          { name: 2 },
-          { name: 3 },
-          { name: 4 },
-          { name: 5 },
-          { name: 6 },
-          { name: 7 },
-        ]}
+        data={restaurantsContext.restaurants}
         renderItem={() => <RestaurantInfoCard />}
         keyExtractor={(item) => item.name}
         showsVerticalScrollIndicator={false}
