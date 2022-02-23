@@ -22,7 +22,7 @@ const Search = styled.View`
 
 export const RestaurantsScreen = () => {
   const [searchQuery, setSearchQuery] = React.useState("");
-  const restaurantsContext = useContext(RestaurantsContext);
+  const { restaurants, isLoading, error } = useContext(RestaurantsContext);
 
   const onChangeSearch = (query) => setSearchQuery(query);
 
@@ -37,8 +37,8 @@ export const RestaurantsScreen = () => {
       </Search>
 
       <RestaurantList
-        data={restaurantsContext.restaurants}
-        renderItem={() => <RestaurantInfoCard />}
+        data={restaurants}
+        renderItem={({ item }) => <RestaurantInfoCard restaurant={item} />}
         keyExtractor={(item) => item.name}
         showsVerticalScrollIndicator={false}
       />
