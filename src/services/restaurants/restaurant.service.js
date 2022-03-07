@@ -9,6 +9,7 @@ export const restaurantsTransform = ({ results = [] }) => {
 
     return {
       ...r,
+      address: r.vicinity,
       isOpenNow: !!r.opening_hours?.open_now,
       isClosedTemporarily: r.business_status === "CLOSED_TEMPORARILY",
     };
