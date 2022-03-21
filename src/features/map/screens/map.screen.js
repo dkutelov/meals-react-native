@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import MapView from "react-native-maps";
 import styled from "styled-components/native";
-import { Text, View } from "react-native";
 
 import { LocationContext } from "../../../services/location/location.context";
 import { RestaurantsContext } from "../../../services/restaurants/restaurant.context";
