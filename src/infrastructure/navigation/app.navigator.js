@@ -7,7 +7,7 @@ import { SettingsScreen } from "../../features/restaurants/screens/settings.scre
 import { screenOptions } from "../../components/utilities/tab-icons";
 import { RestaurantNavigator } from "./restaurants.navigator";
 
-export const Navigation = () => {
+export const AppNavigator = () => {
   const Tab = createBottomTabNavigator();
 
   return (

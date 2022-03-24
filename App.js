@@ -17,7 +17,7 @@ import { AuthenticationContextProvider } from "./src/services/authentication/aut
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurant.context";
 import { LocationContextProvider } from "./src/services/location/location.context";
 import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
-import { Navigation } from "./src/infrastructure/navigation/app.navigator";
+import { Navigation } from "./src/infrastructure/navigation/index";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDDNbPlnvElyu6-MsQheOaJaIaKV-d4Zkw",
