@@ -1,11 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { initializeApp } from "firebase/app";
-
-import {
-  getAuth,
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
 
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
@@ -19,32 +13,24 @@ import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 import { theme } from "./src/infrastructure/theme";
 //const isAndorid = Platform.OS === "android";
 
+import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurant.context";
 import { LocationContextProvider } from "./src/services/location/location.context";
 import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
 import { Navigation } from "./src/infrastructure/navigation/app.navigator";
 
-const firebaseConfig = {};
+const firebaseConfig = {
+  apiKey: "AIzaSyDDNbPlnvElyu6-MsQheOaJaIaKV-d4Zkw",
+  authDomain: "mealstogo-5262a.firebaseapp.com",
+  projectId: "mealstogo-5262a",
+  storageBucket: "mealstogo-5262a.appspot.com",
+  messagingSenderId: "267807787544",
+  appId: "1:267807787544:web:bf870652d1117354b9916d",
+};
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+export const firebaseApp = initializeApp(firebaseConfig);
 
 export default function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      signInWithEmailAndPassword(auth, "dari.k@abv.bg", "test123")
-        .then((user) => {
-          console.log(user);
-          setIsAuthenticated(true);
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    }, 2000);
-  }, []);
-
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
   });
@@ -57,20 +43,18 @@ export default function App() {
     return null;
   }
 
-  if (!isAuthenticated) {
-    return null;
-  }
-
   return (
     <>
       <ThemeProvider theme={theme}>
-        <FavouritesContextProvider>
-          <LocationContextProvider>
-            <RestaurantsContextProvider>
-              <Navigation />
-            </RestaurantsContextProvider>
-          </LocationContextProvider>
-        </FavouritesContextProvider>
+        <AuthenticationContextProvider>
+          <FavouritesContextProvider>
+            <LocationContextProvider>
+              <RestaurantsContextProvider>
+                <Navigation />
+              </RestaurantsContextProvider>
+            </LocationContextProvider>
+          </FavouritesContextProvider>
+        </AuthenticationContextProvider>
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
