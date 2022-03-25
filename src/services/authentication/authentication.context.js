@@ -1,6 +1,6 @@
 import React, { useState, createContext } from "react";
 
-// import { loginRequest } from "./authentication.service";
+import { loginRequest } from "./authentication.service";
 
 export const AuthenticationContext = createContext();
 
@@ -11,15 +11,15 @@ export const AuthenticationContextProvider = ({ children }) => {
 
   const onLogin = (email, password) => {
     setIsLoading(true);
-    // loginRequest(email, password)
-    //   .then((u) => {
-    //     setUser(u);
-    //     setIsLoading(false);
-    //   })
-    //   .catch((e) => {
-    //     setIsLoading(false);
-    //     setError(e);
-    //   });
+    loginRequest(email, password)
+      .then((u) => {
+        setUser(u);
+        setIsLoading(false);
+      })
+      .catch((e) => {
+        setIsLoading(false);
+        setError(e);
+      });
   };
 
   return (
