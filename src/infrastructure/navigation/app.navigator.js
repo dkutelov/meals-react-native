@@ -3,7 +3,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { MapScreen } from "../../features/map/screens/map.screen";
-import { SettingsScreen } from "../../features/restaurants/screens/settings.screen";
+import { SettingsScreen } from "../../features/settings/screens/settings.screen";
 import { screenOptions } from "../../components/utilities/tab-icons";
 import { RestaurantNavigator } from "./restaurants.navigator";
 
