@@ -4,21 +4,26 @@ import {
   CardStyleInterpolators,
 } from "@react-navigation/stack";
 import { SettingsScreen } from "@features/settings/screens/settings.screen";
+import { FavouriteScreen } from "@features/settings/screens/favourites.screen";
 
 const SettingsStack = createStackNavigator();
 
 export const SettingsNavigator = () => (
   <SettingsStack.Navigator
-    headerMode="screen"
     screenOptions={{
       cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+      headerMode: "screen",
     }}
   >
     <SettingsStack.Screen
-      name="Settings"
+      name="SettingsScreen"
       component={SettingsScreen}
-      options={{ header: () => null }}
+      options={{ headerShown: false }}
     />
-    <SettingsStack.Screen name="Favourites" component={() => null} />
+    <SettingsStack.Screen
+      name="Favourites"
+      component={FavouriteScreen}
+      options={{ headerBackTitleVisible: false }}
+    />
   </SettingsStack.Navigator>
 );

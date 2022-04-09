@@ -3,21 +3,13 @@ import { FlatList, TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 
 import { RestaurantInfoCard } from "../components/restautant-info-card.component";
-import { SafeArea } from "@components/utilities/safe-area.component";
+import { SafeArea } from "@components";
 import { RestaurantsContext } from "@services/restaurants/restaurant.context";
 import { FavouritesContext } from "@services/favourites/favourites.context";
 import { LoadingIndicator } from "@components/loading/loading.component";
 import { Search } from "../components/search.component";
 import { FavouritesBar } from "@components/favourites/favourites-bar.component";
-
-const RestaurantList = styled(FlatList).attrs({
-  contentContainerStyle: {
-    padding: 16,
-  },
-})`
-  flex: 1;
-  background-color: ${(props) => props.theme.colors.bg.primary};
-`;
+import { RestaurantList } from "@features/restaurants/components/restaurant-list.styles";
 
 export const RestaurantsScreen = ({ navigation }) => {
   const { restaurants, isLoading, error } = useContext(RestaurantsContext);
