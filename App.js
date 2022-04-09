@@ -2,6 +2,7 @@ import React from "react";
 
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
+import { LogBox } from "react-native";
 
 import {
   useFonts as useOswald,
@@ -13,9 +14,7 @@ import { theme } from "./src/infrastructure/theme";
 //const isAndorid = Platform.OS === "android";
 
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
-import { RestaurantsContextProvider } from "./src/services/restaurants/restaurant.context";
-import { LocationContextProvider } from "./src/services/location/location.context";
-import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
+
 import { Navigation } from "./src/infrastructure/navigation/index";
 
 export default function App() {
@@ -35,16 +34,14 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <AuthenticationContextProvider>
-          <FavouritesContextProvider>
-            <LocationContextProvider>
-              <RestaurantsContextProvider>
-                <Navigation />
-              </RestaurantsContextProvider>
-            </LocationContextProvider>
-          </FavouritesContextProvider>
+          <Navigation />
         </AuthenticationContextProvider>
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
   );
 }
+
+LogBox.ignoreLogs([
+  "AsyncStorage has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-async-storage/async-storage' instead of 'react-native'. See https://github.com/react-native-async-storage/async-storage",
+]);
