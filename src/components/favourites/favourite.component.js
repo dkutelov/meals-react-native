@@ -3,7 +3,7 @@ import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import { AntDesign } from "@expo/vector-icons";
 
-import { FavouritesContext } from "../../services/favourites/favourites.context";
+import { FavouritesContext } from "@services/favourites/favourites.context";
 
 const FavouriteIcon = styled(TouchableOpacity)`
   position: absolute;

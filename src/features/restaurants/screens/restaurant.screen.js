@@ -3,12 +3,12 @@ import { FlatList, TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 
 import { RestaurantInfoCard } from "../components/restautant-info-card.component";
-import { SafeArea } from "../../../components/utilities/safe-area.component";
-import { RestaurantsContext } from "../../../services/restaurants/restaurant.context";
-import { FavouritesContext } from "../../../services/favourites/favourites.context";
-import { LoadingIndicator } from "../../../components/loading/loading.component";
+import { SafeArea } from "@components/utilities/safe-area.component";
+import { RestaurantsContext } from "@services/restaurants/restaurant.context";
+import { FavouritesContext } from "@services/favourites/favourites.context";
+import { LoadingIndicator } from "@components/loading/loading.component";
 import { Search } from "../components/search.component";
-import { FavouritesBar } from "../../../components/favourites/favourites-bar.component";
+import { FavouritesBar } from "@components/favourites/favourites-bar.component";
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {

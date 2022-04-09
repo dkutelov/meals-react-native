@@ -1,5 +1,5 @@
 import React from "react";
-import { colors } from "../../infrastructure/theme/colors";
+import { colors } from "@infrastructure/theme/colors";
 
 import { LoadingContainer, Loading } from "./loading.styles";
 

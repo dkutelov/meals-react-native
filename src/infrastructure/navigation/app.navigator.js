@@ -1,12 +1,12 @@
 import React from "react";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { RestaurantsContextProvider } from "../../services/restaurants/restaurant.context";
-import { LocationContextProvider } from "../../services/location/location.context";
-import { FavouritesContextProvider } from "../../services/favourites/favourites.context";
-import { MapScreen } from "../../features/map/screens/map.screen";
-import { SettingsScreen } from "../../features/settings/screens/settings.screen";
-import { screenOptions } from "../../components/utilities/tab-icons";
+import { RestaurantsContextProvider } from "@services/restaurants/restaurant.context";
+import { LocationContextProvider } from "@services/location/location.context";
+import { FavouritesContextProvider } from "@services/favourites/favourites.context";
+import { MapScreen } from "@features/map/screens/map.screen";
+import { SettingsScreen } from "@features/settings/screens/settings.screen";
+import { screenOptions } from "@components/utilities/tab-icons";
 import { RestaurantNavigator } from "./restaurants.navigator";
 
 export const AppNavigator = () => {

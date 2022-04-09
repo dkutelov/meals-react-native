@@ -10,12 +10,12 @@ import {
 } from "@expo-google-fonts/oswald";
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
-import { theme } from "./src/infrastructure/theme";
+import { theme } from "@infrastructure/theme";
 //const isAndorid = Platform.OS === "android";
 
-import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
+import { AuthenticationContextProvider } from "@services/authentication/authentication.context";
 
-import { Navigation } from "./src/infrastructure/navigation/index";
+import { Navigation } from "@infrastructure/navigation/index";
 
 export default function App() {
   const [oswaldLoaded] = useOswald({

@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 
 import { List } from "react-native-paper";
 
-import { SafeArea } from "../../../components/utilities/safe-area.component";
-import { AuthenticationContext } from "../../../services/authentication/authentication.context";
+import { SafeArea } from "@components/utilities/safe-area.component";
+import { AuthenticationContext } from "@services/authentication/authentication.context";
 
 export const SettingsScreen = ({ navigation }) => {
   const { onLogout } = useContext(AuthenticationContext);

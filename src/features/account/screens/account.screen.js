@@ -8,7 +8,7 @@ import {
   Title,
   AnimationWrapper,
 } from "../components/account.styles";
-import { Spacer } from "../../../components/spacer/spacer.component";
+import { Spacer } from "@components/spacer/spacer.component";
 
 export const AccountScreen = ({ navigation }) => {
   return (
