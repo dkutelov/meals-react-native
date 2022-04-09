@@ -1,15 +1,16 @@
 import React, { useContext, useState } from "react";
-import { FlatList, TouchableOpacity } from "react-native";
-import styled from "styled-components/native";
+import { TouchableOpacity } from "react-native";
 
-import { RestaurantInfoCard } from "../components/restautant-info-card.component";
-import { SafeArea } from "@components";
 import { RestaurantsContext } from "@services/restaurants/restaurant.context";
 import { FavouritesContext } from "@services/favourites/favourites.context";
-import { LoadingIndicator } from "@components/loading/loading.component";
-import { Search } from "../components/search.component";
-import { FavouritesBar } from "@components/favourites/favourites-bar.component";
-import { RestaurantList } from "@features/restaurants/components/restaurant-list.styles";
+import {
+  LoadingIndicator,
+  FadeInView,
+  SafeArea,
+  FavouritesBar,
+} from "@components";
+
+import { RestaurantInfoCard, RestaurantList, Search } from "../components";
 
 export const RestaurantsScreen = ({ navigation }) => {
   const { restaurants, isLoading, error } = useContext(RestaurantsContext);
@@ -30,6 +31,7 @@ export const RestaurantsScreen = ({ navigation }) => {
           onNavigate={navigation.navigate}
         />
       )}
+
       <RestaurantList
         data={restaurants}
         renderItem={({ item }) => (
@@ -40,7 +42,9 @@ export const RestaurantsScreen = ({ navigation }) => {
               })
             }
           >
-            <RestaurantInfoCard restaurant={item} />
+            <FadeInView>
+              <RestaurantInfoCard restaurant={item} />
+            </FadeInView>
           </TouchableOpacity>
         )}
         keyExtractor={(item) => item.name}
