@@ -25,6 +25,7 @@ export const SettingsScreen = ({ navigation }) => {
     setPhoto(photoUri);
   };
 
+  //triggers every time the screen is in focus
   useFocusEffect(
     React.useCallback(() => {
       getProfilePicture(user);

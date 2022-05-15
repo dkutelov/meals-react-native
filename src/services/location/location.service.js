@@ -2,14 +2,12 @@ import camelize from "camelize";
 
 import { locations } from "./locations.mock";
 
-export const locationRequest = (searchTerm) => {
-  return new Promise((resolve, reject) => {
-    const locationMock = locations[searchTerm];
-    if (!locationMock) {
-      reject("not found");
-    }
-    resolve(locationMock);
-  });
+export const locationRequest = async (searchTerm) => {
+  searchTerm = "antwerp";
+  const res = await fetch(
+    `http://localhost:5001/mealstogo-5262a/us-central1/geocode?city=${searchTerm}`
+  );
+  return await res.json();
 };
 
 export const locationTransform = (result) => {

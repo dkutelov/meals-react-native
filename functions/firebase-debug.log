@@ -1,0 +1,504 @@
+[debug] [2022-05-15T14:28:11.907Z] ----------------------------------------------------------------------
+[debug] [2022-05-15T14:28:11.909Z] Command:       /Users/dariykutelov/.nvm/versions/node/v16.14.0/bin/node /Users/dariykutelov/.nvm/versions/node/v16.14.0/bin/firebase emulators:start --only functions
+[debug] [2022-05-15T14:28:11.909Z] CLI Version:   10.6.0
+[debug] [2022-05-15T14:28:11.909Z] Platform:      darwin
+[debug] [2022-05-15T14:28:11.909Z] Node Version:  v16.14.0
+[debug] [2022-05-15T14:28:11.911Z] Time:          Sun May 15 2022 17:28:11 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-05-15T14:28:11.911Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-15T14:28:11.914Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-05-15T14:28:11.978Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-15T14:28:11.978Z] > authorizing via signed-in user (kgkbuk@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-05-15T14:28:11.990Z] [hub] writing locator at /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/hub-mealstogo-5262a.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-05-15T14:28:12.004Z] defaultcredentials: writing to file /Users/dariykutelov/.config/firebase/kgkbuk_gmail_com_application_default_credentials.json
+[debug] [2022-05-15T14:28:12.006Z] Setting GAC to /Users/dariykutelov/.config/firebase/kgkbuk_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/dariykutelov/.config/firebase/kgkbuk_gmail_com_application_default_credentials.json"}}
+[debug] [2022-05-15T14:28:12.008Z] > refreshing access token with scopes: []
+[debug] [2022-05-15T14:28:12.008Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-15T14:28:12.160Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 15 May 2022 14:28:12 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-15T14:28:12.208Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-5262a/adminSdkConfig [none]
+[debug] [2022-05-15T14:28:12.496Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-05-15T14:28:12.496Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-05-15T14:28:12.590Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-5262a/adminSdkConfig 200
+[debug] [2022-05-15T14:28:12.590Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-5262a/adminSdkConfig {"projectId":"mealstogo-5262a","storageBucket":"mealstogo-5262a.appspot.com"}
+[debug] [2022-05-15T14:28:12.873Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-05-15T14:28:12.874Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-05-15T14:28:12.874Z] Starting Emulator UI with command {"binary":"node","args":["/Users/dariykutelov/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/dariykutelov/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-05-15T14:28:12.995Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions\" for Cloud Functions..."}}
+[debug] [2022-05-15T14:28:13.144Z] Validating nodejs source
+[debug] [2022-05-15T14:28:14.686Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-15T14:28:14.687Z] Building nodejs source
+[debug] [2022-05-15T14:28:14.687Z] Analyzing nodejs backend spec
+[info] ✔  functions[us-central1-geocode]: http function initialized (http://localhost:5001/mealstogo-5262a/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-5262a/us-central1/geocode)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-05-15T14:28:45.419Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:28:45.420Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:28:45.420Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:28:45.431Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-05-15T14:28:45.433Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-05-15T14:28:45.433Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:28:45.433Z] [worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3361.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3361.sock"}}
+[debug] [2022-05-15T14:28:45.433Z] [worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: BUSY"}}
+[debug] [2022-05-15T14:28:47.056Z] [runtime-status] [3361] Functions runtime initialized. {"cwd":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Functions runtime initialized. {\"cwd\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-05-15T14:28:47.057Z] [runtime-status] [3361] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Disabled runtime features: undefined"}}
+[debug] [2022-05-15T14:28:47.059Z] [runtime-status] [3361] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:28:47.061Z] [runtime-status] [3361] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:28:47.061Z] [runtime-status] [3361] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-05-15T14:28:47.062Z] [runtime-status] [3361] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:28:47.114Z] [runtime-status] [3361] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-05-15T14:28:47.114Z] [runtime-status] [3361] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:28:47.115Z] [runtime-status] [3361] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:28:47.116Z] [runtime-status] [3361] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:28:47.116Z] [runtime-status] [3361] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:28:47.116Z] [runtime-status] [3361] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:28:47.120Z] [runtime-status] [3361] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:28:47.121Z] [runtime-status] [3361] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Running geocode in signature http"}}
+[debug] [2022-05-15T14:28:47.124Z] [runtime-status] [3361] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3361.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3361.sock"}}
+[debug] [2022-05-15T14:28:47.126Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:28:47.127Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?antwerp, mapping to path=/?antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?antwerp, mapping to path=/?antwerp"}}
+[debug] [2022-05-15T14:28:47.131Z] [runtime-status] [3361] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Ephemeral server handling GET request"}}
+[debug] [2022-05-15T14:28:47.132Z] [runtime-status] [3361] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3361] Ephemeral server survived."}}
+[warn] ⚠  functions: TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at module.exports.geocodeRequest (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js:6:43)
+    at /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/index.js:7:3
+    at cloudFunction (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/providers/https.js:50:16)
+    at /Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:591:16
+    at runFunction (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:15)
+    at runHTTPS (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:11)
+    at handler (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:23)
+    at Layer.handle [as handle_request] (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:112:3) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n    at module.exports.geocodeRequest (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js:6:43)\n    at /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/index.js:7:3\n    at cloudFunction (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/providers/https.js:50:16)\n    at /Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:591:16\n    at runFunction (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:15)\n    at runHTTPS (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:11)\n    at handler (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:23)\n    at Layer.handle [as handle_request] (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:112:3)"}}
+[warn] ⚠  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-05-15T14:28:47.142Z] [worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: exited"}}
+[debug] [2022-05-15T14:28:47.143Z] [worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-2ccb3f6c-9f8a-4734-9019-b96c18d6abf2]: FINISHED"}}
+[debug] [2022-05-15T14:28:47.143Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-15T14:31:07.477Z] File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-05-15T14:31:08.479Z] Validating nodejs source
+[debug] [2022-05-15T14:31:09.791Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-15T14:31:09.792Z] Building nodejs source
+[debug] [2022-05-15T14:31:09.792Z] Analyzing nodejs backend spec
+[debug] [2022-05-15T14:31:27.191Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:31:27.192Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:31:27.192Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:31:27.192Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-05-15T14:31:27.200Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-05-15T14:31:27.202Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-05-15T14:31:27.202Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:31:27.202Z] [worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3438.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3438.sock"}}
+[debug] [2022-05-15T14:31:27.202Z] [worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: BUSY"}}
+[debug] [2022-05-15T14:31:28.915Z] [runtime-status] [3438] Functions runtime initialized. {"cwd":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Functions runtime initialized. {\"cwd\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-05-15T14:31:28.917Z] [runtime-status] [3438] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Disabled runtime features: undefined"}}
+[debug] [2022-05-15T14:31:28.919Z] [runtime-status] [3438] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:31:28.921Z] [runtime-status] [3438] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:31:28.921Z] [runtime-status] [3438] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-05-15T14:31:28.922Z] [runtime-status] [3438] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:31:28.966Z] [runtime-status] [3438] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-05-15T14:31:28.967Z] [runtime-status] [3438] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:31:28.967Z] [runtime-status] [3438] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:31:28.968Z] [runtime-status] [3438] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:31:28.969Z] [runtime-status] [3438] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:31:28.969Z] [runtime-status] [3438] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:31:28.972Z] [runtime-status] [3438] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:31:28.973Z] [runtime-status] [3438] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Running geocode in signature http"}}
+[debug] [2022-05-15T14:31:28.976Z] [runtime-status] [3438] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3438.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3438.sock"}}
+[debug] [2022-05-15T14:31:28.977Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:31:28.978Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?antwerp, mapping to path=/?antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?antwerp, mapping to path=/?antwerp"}}
+[debug] [2022-05-15T14:31:28.983Z] [runtime-status] [3438] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Ephemeral server handling GET request"}}
+[info] >  Url { {"user":"Url {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m Url {"}}
+[info] >    protocol: null, {"user":"  protocol: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   protocol: null,"}}
+[info] >    slashes: null, {"user":"  slashes: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   slashes: null,"}}
+[info] >    auth: null, {"user":"  auth: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   auth: null,"}}
+[info] >    host: null, {"user":"  host: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   host: null,"}}
+[info] >    port: null, {"user":"  port: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   port: null,"}}
+[info] >    hostname: null, {"user":"  hostname: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   hostname: null,"}}
+[info] >    hash: null, {"user":"  hash: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   hash: null,"}}
+[info] >    search: '?antwerp', {"user":"  search: '?antwerp',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   search: '?antwerp',"}}
+[info] >    query: [Object: null prototype] { antwerp: '' }, {"user":"  query: [Object: null prototype] { antwerp: '' },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   query: [Object: null prototype] { antwerp: '' },"}}
+[info] >    pathname: '/', {"user":"  pathname: '/',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   pathname: '/',"}}
+[info] >    path: '/?antwerp', {"user":"  path: '/?antwerp',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   path: '/?antwerp',"}}
+[info] >    href: '/?antwerp' {"user":"  href: '/?antwerp'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   href: '/?antwerp'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2022-05-15T14:31:28.991Z] [runtime-status] [3438] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3438] Ephemeral server survived."}}
+[warn] ⚠  functions: TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at module.exports.geocodeRequest (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js:7:43)
+    at /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/index.js:7:3
+    at cloudFunction (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/providers/https.js:50:16)
+    at /Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:591:16
+    at runFunction (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:15)
+    at runHTTPS (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:11)
+    at handler (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:23)
+    at Layer.handle [as handle_request] (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:112:3) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"TypeError: Cannot read properties of undefined (reading 'toLowerCase')\n    at module.exports.geocodeRequest (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js:7:43)\n    at /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/index.js:7:3\n    at cloudFunction (/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/providers/https.js:50:16)\n    at /Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:591:16\n    at runFunction (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:564:15)\n    at runHTTPS (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:590:11)\n    at handler (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:510:23)\n    at Layer.handle [as handle_request] (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/dariykutelov/.nvm/versions/node/v16.14.0/lib/node_modules/firebase-tools/node_modules/express/lib/router/route.js:112:3)"}}
+[warn] ⚠  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-05-15T14:31:29.004Z] [worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: exited"}}
+[debug] [2022-05-15T14:31:29.004Z] [worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-af636685-c0b8-45bd-aa54-432fe9d834a8]: FINISHED"}}
+[debug] [2022-05-15T14:31:29.004Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-15T14:32:03.375Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:32:03.375Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:32:03.375Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:32:03.375Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-05-15T14:32:03.381Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-05-15T14:32:03.381Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-05-15T14:32:03.382Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:32:03.382Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock"}}
+[debug] [2022-05-15T14:32:03.382Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: BUSY"}}
+[debug] [2022-05-15T14:32:04.168Z] [runtime-status] [3462] Functions runtime initialized. {"cwd":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Functions runtime initialized. {\"cwd\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-05-15T14:32:04.170Z] [runtime-status] [3462] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Disabled runtime features: undefined"}}
+[debug] [2022-05-15T14:32:04.172Z] [runtime-status] [3462] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:32:04.173Z] [runtime-status] [3462] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:32:04.174Z] [runtime-status] [3462] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-05-15T14:32:04.174Z] [runtime-status] [3462] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:32:04.208Z] [runtime-status] [3462] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-05-15T14:32:04.208Z] [runtime-status] [3462] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:32:04.208Z] [runtime-status] [3462] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:32:04.209Z] [runtime-status] [3462] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:32:04.210Z] [runtime-status] [3462] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:32:04.210Z] [runtime-status] [3462] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:32:04.211Z] [runtime-status] [3462] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:32:04.212Z] [runtime-status] [3462] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Running geocode in signature http"}}
+[debug] [2022-05-15T14:32:04.215Z] [runtime-status] [3462] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock"}}
+[debug] [2022-05-15T14:32:04.217Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:32:04.218Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2022-05-15T14:32:04.223Z] [runtime-status] [3462] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Ephemeral server handling GET request"}}
+[info] >  Url { {"user":"Url {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m Url {"}}
+[info] >    protocol: null, {"user":"  protocol: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   protocol: null,"}}
+[info] >    slashes: null, {"user":"  slashes: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   slashes: null,"}}
+[info] >    auth: null, {"user":"  auth: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   auth: null,"}}
+[info] >    host: null, {"user":"  host: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   host: null,"}}
+[info] >    port: null, {"user":"  port: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   port: null,"}}
+[info] >    hostname: null, {"user":"  hostname: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   hostname: null,"}}
+[info] >    hash: null, {"user":"  hash: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   hash: null,"}}
+[info] >    search: '?city=antwerp', {"user":"  search: '?city=antwerp',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   search: '?city=antwerp',"}}
+[info] >    query: [Object: null prototype] { city: 'antwerp' }, {"user":"  query: [Object: null prototype] { city: 'antwerp' },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   query: [Object: null prototype] { city: 'antwerp' },"}}
+[info] >    pathname: '/', {"user":"  pathname: '/',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   pathname: '/',"}}
+[info] >    path: '/?city=antwerp', {"user":"  path: '/?city=antwerp',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   path: '/?city=antwerp',"}}
+[info] >    href: '/?city=antwerp' {"user":"  href: '/?city=antwerp'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   href: '/?city=antwerp'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2022-05-15T14:32:04.233Z] [runtime-status] [3462] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-05-15T14:32:04.235Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: IDLE"}}
+[debug] [2022-05-15T14:32:04.235Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-15T14:32:23.452Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:32:23.452Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:32:23.452Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:32:23.452Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:32:23.452Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock"}}
+[debug] [2022-05-15T14:32:23.452Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: BUSY"}}
+[debug] [2022-05-15T14:32:23.453Z] [runtime-status] [3462] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:32:23.453Z] [runtime-status] [3462] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Running geocode in signature http"}}
+[debug] [2022-05-15T14:32:23.454Z] [runtime-status] [3462] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3462.sock"}}
+[debug] [2022-05-15T14:32:23.454Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:32:23.454Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2022-05-15T14:32:23.456Z] [runtime-status] [3462] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Ephemeral server handling GET request"}}
+[info] >  Url { {"user":"Url {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m Url {"}}
+[info] >    protocol: null, {"user":"  protocol: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   protocol: null,"}}
+[info] >    slashes: null, {"user":"  slashes: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   slashes: null,"}}
+[info] >    auth: null, {"user":"  auth: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   auth: null,"}}
+[info] >    host: null, {"user":"  host: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   host: null,"}}
+[info] >    port: null, {"user":"  port: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   port: null,"}}
+[info] >    hostname: null, {"user":"  hostname: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   hostname: null,"}}
+[info] >    hash: null, {"user":"  hash: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   hash: null,"}}
+[info] >    search: '?city=antwerp', {"user":"  search: '?city=antwerp',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   search: '?city=antwerp',"}}
+[info] >    query: [Object: null prototype] { city: 'antwerp' }, {"user":"  query: [Object: null prototype] { city: 'antwerp' },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   query: [Object: null prototype] { city: 'antwerp' },"}}
+[info] >    pathname: '/', {"user":"  pathname: '/',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   pathname: '/',"}}
+[info] >    path: '/?city=antwerp', {"user":"  path: '/?city=antwerp',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   path: '/?city=antwerp',"}}
+[info] >    href: '/?city=antwerp' {"user":"  href: '/?city=antwerp'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   href: '/?city=antwerp'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2022-05-15T14:32:23.460Z] [runtime-status] [3462] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3462] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-05-15T14:32:23.460Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: IDLE"}}
+[debug] [2022-05-15T14:32:23.460Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-15T14:33:05.431Z] File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-05-15T14:33:06.433Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-05-15T14:33:06.433Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: FINISHING"}}
+[debug] [2022-05-15T14:33:06.434Z] Validating nodejs source
+[debug] [2022-05-15T14:33:08.474Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-15T14:33:08.475Z] Building nodejs source
+[debug] [2022-05-15T14:33:08.475Z] Analyzing nodejs backend spec
+[debug] [2022-05-15T14:33:08.486Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: exited"}}
+[debug] [2022-05-15T14:33:08.487Z] [worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-4c1870d9-6e3b-465b-bccd-beaa9eaad4b0]: FINISHED"}}
+[debug] [2022-05-15T14:33:24.417Z] File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-05-15T14:33:25.422Z] Validating nodejs source
+[debug] [2022-05-15T14:33:26.455Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-15T14:33:26.456Z] Building nodejs source
+[debug] [2022-05-15T14:33:26.456Z] Analyzing nodejs backend spec
+[debug] [2022-05-15T14:33:32.677Z] File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-05-15T14:33:33.679Z] Validating nodejs source
+[debug] [2022-05-15T14:33:34.708Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-15T14:33:34.709Z] Building nodejs source
+[debug] [2022-05-15T14:33:34.709Z] Analyzing nodejs backend spec
+[debug] [2022-05-15T14:33:42.837Z] File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-05-15T14:33:42.937Z] File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-05-15T14:33:43.938Z] Validating nodejs source
+[debug] [2022-05-15T14:33:44.999Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-15T14:33:45.000Z] Building nodejs source
+[debug] [2022-05-15T14:33:45.000Z] Analyzing nodejs backend spec
+[debug] [2022-05-15T14:34:00.101Z] File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-05-15T14:34:01.104Z] Validating nodejs source
+[debug] [2022-05-15T14:34:02.146Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.21.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-15T14:34:02.147Z] Building nodejs source
+[debug] [2022-05-15T14:34:02.147Z] Analyzing nodejs backend spec
+[debug] [2022-05-15T14:34:39.897Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:34:39.897Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:34:39.897Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:34:39.897Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2022-05-15T14:34:39.906Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-05-15T14:34:39.906Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-05-15T14:34:39.906Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:34:39.907Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:34:39.907Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY"}}
+[debug] [2022-05-15T14:34:41.769Z] [runtime-status] [3567] Functions runtime initialized. {"cwd":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions","node_version":"16.14.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Functions runtime initialized. {\"cwd\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions\",\"node_version\":\"16.14.0\"}"}}
+[debug] [2022-05-15T14:34:41.770Z] [runtime-status] [3567] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Disabled runtime features: undefined"}}
+[debug] [2022-05-15T14:34:41.772Z] [runtime-status] [3567] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:34:41.773Z] [runtime-status] [3567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:34:41.774Z] [runtime-status] [3567] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-05-15T14:34:41.774Z] [runtime-status] [3567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:34:41.803Z] [runtime-status] [3567] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-05-15T14:34:41.803Z] [runtime-status] [3567] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:34:41.804Z] [runtime-status] [3567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:34:41.804Z] [runtime-status] [3567] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-15T14:34:41.805Z] [runtime-status] [3567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.1","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.1\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-15T14:34:41.805Z] [runtime-status] [3567] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/Users/dariykutelov/Documents/Study/ReactNative/react-native-v1/Meal/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-05-15T14:34:41.806Z] [runtime-status] [3567] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:34:41.807Z] [runtime-status] [3567] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Running geocode in signature http"}}
+[debug] [2022-05-15T14:34:41.809Z] [runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:34:41.811Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:34:41.811Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2022-05-15T14:34:41.816Z] [runtime-status] [3567] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server handling GET request"}}
+[debug] [2022-05-15T14:34:41.821Z] [runtime-status] [3567] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-05-15T14:34:41.822Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE"}}
+[debug] [2022-05-15T14:34:41.822Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-15T14:34:43.755Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:34:43.755Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:34:43.755Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:34:43.756Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:34:43.756Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:34:43.756Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY"}}
+[debug] [2022-05-15T14:34:43.759Z] [runtime-status] [3567] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:34:43.760Z] [runtime-status] [3567] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Running geocode in signature http"}}
+[debug] [2022-05-15T14:34:43.760Z] [runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:34:43.760Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:34:43.760Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2022-05-15T14:34:43.764Z] [runtime-status] [3567] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server handling GET request"}}
+[debug] [2022-05-15T14:34:43.765Z] [runtime-status] [3567] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-05-15T14:34:43.766Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE"}}
+[debug] [2022-05-15T14:34:43.766Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-15T14:34:51.376Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:34:51.376Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:34:51.376Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:34:51.377Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:34:51.377Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:34:51.377Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY"}}
+[debug] [2022-05-15T14:34:51.377Z] [runtime-status] [3567] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:34:51.377Z] [runtime-status] [3567] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Running geocode in signature http"}}
+[debug] [2022-05-15T14:34:51.378Z] [runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:34:51.379Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:34:51.379Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2022-05-15T14:34:51.380Z] [runtime-status] [3567] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server handling GET request"}}
+[debug] [2022-05-15T14:34:51.381Z] [runtime-status] [3567] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-05-15T14:34:51.382Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE"}}
+[debug] [2022-05-15T14:34:51.382Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-05-15T14:35:01.890Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-15T14:35:01.890Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-15T14:35:01.890Z] Accepted request GET /mealstogo-5262a/us-central1/geocode?city=antwerp --> us-central1-geocode
+[debug] [2022-05-15T14:35:01.890Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-05-15T14:35:01.890Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: Assigning socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:35:01.890Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: BUSY"}}
+[debug] [2022-05-15T14:35:01.890Z] [runtime-status] [3567] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-05-15T14:35:01.891Z] [runtime-status] [3567] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Running geocode in signature http"}}
+[debug] [2022-05-15T14:35:01.891Z] [runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Attempting to listen to socketPath: /var/folders/hk/7qd8_8ps7wnf5nyphppf3p540000gn/T/fire_emu_3567.sock"}}
+[debug] [2022-05-15T14:35:01.891Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-15T14:35:01.891Z] [functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-5262a/us-central1/geocode?city=antwerp, mapping to path=/?city=antwerp"}}
+[debug] [2022-05-15T14:35:01.892Z] [runtime-status] [3567] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server handling GET request"}}
+[debug] [2022-05-15T14:35:01.893Z] [runtime-status] [3567] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [3567] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-05-15T14:35:01.894Z] [worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-361402b2-32db-4215-b81e-df6788835dfd]: IDLE"}}
+[debug] [2022-05-15T14:35:01.894Z] [work-queue] {"queueLength":0,"workRunningCount":0}
