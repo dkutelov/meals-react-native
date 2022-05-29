@@ -47,7 +47,7 @@ export const RestaurantsScreen = ({ navigation }) => {
             </FadeInView>
           </TouchableOpacity>
         )}
-        keyExtractor={(item) => item.name}
+        keyExtractor={(item, index) => `${item.name}-${index}`}
         showsVerticalScrollIndicator={false}
       />
     </SafeArea>
