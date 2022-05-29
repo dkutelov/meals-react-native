@@ -1,9 +1,6 @@
 import camelize from "camelize";
 
-import { locations } from "./locations.mock";
-
 export const locationRequest = async (searchTerm) => {
-  searchTerm = "antwerp";
   const res = await fetch(
     `http://localhost:5001/mealstogo-5262a/us-central1/geocode?city=${searchTerm}`
   );

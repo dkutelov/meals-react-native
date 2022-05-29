@@ -1,12 +1,7 @@
 import camelize from "camelize";
-import { mocks, mockImages } from "./mock";
 
 export const restaurantsTransform = ({ results = [] }) => {
   const mappedResults = results.map((r) => {
-    r.photos = r.photos.map((p) => {
-      return mockImages[Math.ceil(Math.random() * (mockImages.length - 1))];
-    });
-
     return {
       ...r,
       address: r.vicinity,
@@ -17,12 +12,10 @@ export const restaurantsTransform = ({ results = [] }) => {
   return camelize(mappedResults);
 };
 
-export const restaurantsRequest = (location = "37.7749295,-122.4194155") => {
-  return new Promise((resolve, reject) => {
-    const mock = mocks[location];
-    if (!mock) {
-      reject("not found");
-    }
-    resolve(mock);
+export const restaurantsRequest = (location) => {
+  return fetch(
+    `http://localhost:5001/mealstogo-5262a/us-central1/placesNearBy?location=${location}`
+  ).then((res) => {
+    return res.json();
   });
 };
