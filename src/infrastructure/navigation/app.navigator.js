@@ -5,11 +5,12 @@ import { RestaurantsContextProvider } from "@services/restaurants/restaurant.con
 import { LocationContextProvider } from "@services/location/location.context";
 import { FavouritesContextProvider } from "@services/favourites/favourites.context";
 import { MapScreen } from "@features/map/screens/map.screen";
-import { CheckoutScreen } from "@features/checkout/screens/checkout.screen";
 
 import { screenOptions } from "@components/utilities/tab-icons";
 import { RestaurantNavigator } from "./restaurants.navigator";
 import { SettingsNavigator } from "./settings.navigator";
+import { CheckoutNavigator } from "./checkout.navigator";
+
 import { CartContextProvider } from "../../services/cart/cart.context";
 
 export const AppNavigator = () => {
@@ -22,7 +23,7 @@ export const AppNavigator = () => {
           <CartContextProvider>
             <Tab.Navigator screenOptions={screenOptions}>
               <Tab.Screen name="Restaurants" component={RestaurantNavigator} />
-              <Tab.Screen name="Checkout" component={CheckoutScreen} />
+              <Tab.Screen name="Checkout" component={CheckoutNavigator} />
               <Tab.Screen
                 name="Map"
                 component={MapScreen}
