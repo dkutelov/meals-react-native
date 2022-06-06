@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { colors } from "@infrastructure/theme/colors";
 
 export const TAB_ICONS = {
   Restaurants: (focused) =>
@@ -12,6 +13,6 @@ export const screenOptions = ({ route }) => ({
   tabBarIcon: ({ focused, color, size }) => (
     <Ionicons name={TAB_ICONS[route.name](focused)} size={size} color={color} />
   ),
-  tabBarActiveTintColor: "tomato",
-  tabBarInactiveTintColor: "gray",
+  tabBarActiveTintColor: colors.brand.primary,
+  tabBarInactiveTintColor: colors.brand.muted,
 });
